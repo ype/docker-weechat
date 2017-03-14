@@ -1,0 +1,5 @@
+install:
+  - curl -sLo - http://j.mp/install-travis-docker | sh -xe
+
+script:
+- ./run 'docker build -t ype/docker-weechat . && docker run ype/docker-weechat echo Build succeed'

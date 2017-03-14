@@ -17,4 +17,5 @@ RUN mkdir -p $HOME/.weechat\
 
 WORKDIR $HOME
 USER weechat
+EXPOSE 9001
 ENTRYPOINT ["weechat"]
